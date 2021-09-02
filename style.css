@@ -1,0 +1,48 @@
+:root{
+    --font-family: Graphik-Regular, "Gotham SSm A","Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    height: 130px;
+    align-items: center;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numero4-cor {
+    color: #ff5c5c;
+}
+
+h1 {
+    font-family: var(--font-family);
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+.botoes-navegacao {
+    font-family: var(--font-family);
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+
+
+
