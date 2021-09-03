@@ -1,61 +1,59 @@
-:root{
-    --font-family: Graphik-Regular, "Gotham SSm A","Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+:root {
+  --font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    height: 130px;
-    align-items: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 130px;
+  align-items: center;
 }
 
 header > nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .numero4-cor {
-    color: #ff5c5c;
+  color: #ff5c5c;
 }
 
 h1 {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
-.menu-navegacao{
-    display: flex;
-    list-style: none;
+.menu-navegacao {
+  display: flex;
+  list-style: none;
 }
 
 .botoes-navegacao {
-    font-family: var(--font-family);
-    margin: 0px 15px;
-    text-decoration: none;
+  font-family: var(--font-family);
+  margin: 0px 15px;
+  text-decoration: none;
 }
 
 .section-four {
-    display: flex;
-    background-image: url(./img/car-section-four.jpg);
-    height: 400px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  background-image: url(./img/car-section-four.jpg);
+  height: 400px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-five {
-    display: flex;
-
+  display: flex;
 }
 .contato {
-    display: flex;
-    
+  display: flex;
 }
