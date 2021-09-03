@@ -1,3 +1,4 @@
+/* configurações default */
 :root {
   --font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,22 +23,45 @@ body {
   font-family: var(--font-family);
 }
 
-/* GUILHERME */
+/* Configurações Header e section 1 Responsável:GUILHERME */
+/* início - configurações header */
 header {
   background: var(--header-color);
   padding: 15px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 70px;
+  height: 10vh;
   width: 100%;
   position: fixed;
 }
 
-header > nav {
+@media screen and (max-width: 614px) {
+  header {
+    height: 100px;
+  }
+}
+
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 795px) {
+  nav {
+    display: flex;
+  }
+  nav a {
+    font-size: 0.5em;
+    display: flex;
+  }
 }
 
 .numero4-cor {
@@ -82,7 +106,7 @@ h1 {
   font-weight: bold;
 }
 
-/* GUILHERME */
+/* início configurações section 1 */
 .section-one {
   text-align: center;
 }
@@ -99,7 +123,8 @@ section > div > img {
   }
 }
 
-/* NOSSOS PRODUTOS - SECTION TWO */
+/* Configurações section 2 (produtos) e section 3 (como funciona) Responsável:Marcus */
+/* Início configurações Section 2 */
 .section-two .main-container {
   display: grid;
   text-align: center;
@@ -187,12 +212,11 @@ span {
   font-size: 1.2rem;
 }
 
-/* COMO FUNCIONA - SECTION THREE */
+/* Início configurações Section 3 */
 .section-three {
   min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* place-content: center; */
   font-size: 1.5rem;
   text-align: center;
   color: var(--text-color-for-dark-bg);
@@ -243,4 +267,126 @@ span {
     display: flex;
     flex-direction: column;
   }
+}
+
+/* Configurações section 4 (quem somos), section 5 (Contato) e footer  Responsável: Jessica */
+/* Início configurações Section 4 */
+.section-four-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+.left-side-section-four-container img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.right-side-section-four-container {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px 20px;
+  color: var(--text-color-for-dark-bg);
+  text-align: center;
+}
+
+.section-four-quem-somos {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: larger;
+}
+
+@media screen and (max-width: 795px) {
+  .left-side-section-four-container img {
+    display: none;
+  }
+  .section-four-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .right-side-section-four-container {
+    font-size: 1.5rem;
+  }
+}
+
+/* Início configurações Section 5 */
+.section-five {
+  /* min-height: 60vh; */
+  background-color: var(--primary-color);
+}
+.section-five-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+}
+
+.contato-lado-esquerdo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contato-lado-direito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contato-lado-esquerdo div {
+  margin-bottom: 15px;
+  width: 300px;
+}
+.contato-lado-esquerdo div input {
+  display: block;
+  width: 100%;
+}
+
+.contato-lado-esquerdo textarea {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 150px;
+}
+
+.contato-lado-esquerdo button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 670px) {
+  .section-five-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contato-lado-esquerdo button {
+    margin-bottom: 50px;
+  }
+}
+
+/* Início configurações Footer */
+
+footer {
+  height: 10vh;
+  background-color: var(--header-color);
+  display: grid;
+  place-content: center;
+}
+
+/* footer ul li a img {
+  display: flex;
+} */
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer img {
+  width: 50px;
+  margin: 0 10px;
 }
