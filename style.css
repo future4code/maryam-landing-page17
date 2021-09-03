@@ -3,8 +3,9 @@
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --primary-color: #ff5c5c;
   --secondary-color: #ffa5a5;
-  --text-color-for-dark-bg: #000;
-  --text-color-for-light-bg: #fff;
+  --text-color-for-light-bg: #000;
+  --text-color-for-dark-bg: #fff;
+  --header-color: #c8c8c8;
 }
 
 * {
@@ -13,17 +14,24 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family);
 }
+
 /* GUILHERME */
 header {
-  background: rgba(0, 0, 0, 0.322);
+  background: var(--header-color);
   padding: 15px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 70px;
-  align-items: center;
+  width: 100%;
+  position: fixed;
 }
 
 header > nav {
@@ -50,9 +58,6 @@ h1 {
   font-family: var(--font-family);
   margin: 0px 15px;
   text-decoration: none;
-}
-
-nav {
   text-align: center;
 }
 
@@ -63,8 +68,11 @@ nav {
     height: 110px;
     text-align: center;
   }
-  header > li {
-    text-align: center;
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -74,22 +82,40 @@ nav {
   font-weight: bold;
 }
 
+/* GUILHERME */
 .section-one {
   text-align: center;
 }
 
 section > div > img {
+  margin-top: 70px;
   max-width: 80%;
   max-height: 80%;
 }
 
-/* GUILHERME */
+@media screen and (max-width: 720px) {
+  section > div > img {
+    margin-top: 120px;
+  }
+}
 
 /* NOSSOS PRODUTOS - SECTION TWO */
 .section-two .main-container {
   display: grid;
   text-align: center;
   grid-template-columns: 1fr 2fr;
+}
+
+span {
+  color: #000;
+}
+
+.tamanho-preco {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 928px) {
@@ -106,6 +132,7 @@ section > div > img {
   justify-content: center;
   font-size: 2rem;
   padding: 10px 20px;
+  color: var(--text-color-for-dark-bg);
 }
 
 @media screen and (max-width: 928px) {
@@ -124,20 +151,31 @@ section > div > img {
   display: grid;
   gap: 30px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: 1fr 1fr;
   text-align: center;
   padding: 75px 25px;
 }
 
+@media screen and (max-width: 778px) {
+  .section-two .produtos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .section-two .produtos .article {
-  background-color: var(--primary-color);
-  box-shadow: 4px 6px 10px var(--secondary-color);
+  background-color: #fff;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
-  color: var(--text-color-for-light-bg);
+  color: var(--primary-color);
   display: grid;
   place-content: center;
   height: 320px;
   padding: 10px 15px;
+}
+
+.section-two .produtos .article p {
+  color: var(--primary-color);
 }
 
 .section-two .produtos .article h2 {
@@ -147,4 +185,62 @@ section > div > img {
 
 .section-two .produtos .article p {
   font-size: 1.2rem;
+}
+
+/* COMO FUNCIONA - SECTION THREE */
+.section-three {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* place-content: center; */
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-color-for-dark-bg);
+}
+
+.section-three .article-left-side {
+  background-color: var(--secondary-color);
+  display: grid;
+  place-content: center;
+  padding: 10px 25px;
+}
+
+.section-three .article-left-side h2 {
+  margin-bottom: 20px;
+}
+
+.section-three .article-left-side li {
+  margin-bottom: 10px;
+}
+
+.section-three .article-right-side {
+  background-color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  padding: 10px 25px;
+}
+
+.section-three .article-right-side h2 {
+  margin-bottom: 20px;
+}
+
+.section-three .article-right-side li {
+  margin-bottom: 10px;
+}
+
+.section-three ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .section-three {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .section-three {
+    display: flex;
+    flex-direction: column;
+  }
 }
