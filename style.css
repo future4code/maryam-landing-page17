@@ -43,6 +43,19 @@ h1 {
     text-decoration: none;
 }
 
+.section-four {
+    display: flex;
+    background-image: url(./img/car-section-four.jpg);
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
 
+.section-five {
+    display: flex;
 
-
+}
+.contato {
+    display: flex;
+    
+}
