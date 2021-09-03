@@ -1,54 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>4CARS</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <h1><span class="numero4-cor">4</span>CARS</h1>
-        </div>
-        
-        <nav>
+      <div>
+        <h1><span class="numero4-cor">4</span>CARS</h1>
+      </div>
+
+      <nav>
         <ul class="menu-navegacao">
-            <li ><a class="botoes-navegacao" href="">Início</a></li>
-            <li><a class="botoes-navegacao" href="">Nossos produtos</a></li>
-            <li><a class="botoes-navegacao" href="">Como funciona</a></li>
-            <li><a class="botoes-navegacao" href="">Quem somos</a></li>
-            <li><a class="botoes-navegacao" href="">Contato</a></li>
+          <li>
+            <a class="botoes-navegacao botoes-navegacao-rosa" href="#inicio"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a class="botoes-navegacao" href="#produtos">Nossos produtos</a>
+          </li>
+          <li>
+            <a class="botoes-navegacao" href="#como-funciona">Como funciona</a>
+          </li>
+          <li><a class="botoes-navegacao" href="#quem-somos">Quem somos</a></li>
+          <li>
+            <a class="botoes-navegacao botoes-navegacao-rosa" href=""
+              >Contato</a
+            >
+          </li>
         </ul>
-    </nav>
+      </nav>
     </header>
 
-    <section class="section-four">
-        <div class="quem-somos">
-        <p>A 4CARS nasceu com o objetivo de ajudar quem precisa de um carro para trabalhar, oferecendo alugueis com preço justo e carros pensados para sua rotina e objetivos.</p>
-        </div>
+    <section class="section-one" id="inicio">
+      <div>
+        <img src="./img/Nosso carro, sua chance! (1).png" />
+      </div>
     </section>
 
-    <section class="section-five">
-    <!-- <input type="text" name="" id=""> -->
-    <div class="contato">
-        <div>Fale Conosco</div>
-        <form action="">
-            <label for "nome">Nome</label><input type="text" name="nome" id="nome"><br>
-            <label for "email">Email</label><input type="text" name="email" id="email"><br>
-            <label for "mensagem">Mensagem</label><input type="text" name="mensagem" id="mensagem"><br>
-            <button type="submit">Enviar</button>
-        </form>
-
-        <div class="nossos-contatos">
-            <p>4Cars</p>
-            <p>Endereço: Rua das Amoras, 123 - São Paulo</p>
-            <p>Telefone: (11) 2525-3030r</p>
-            <p>Email: contato@4cars.com.br</p>
+    <!-- NOSSOS PRODUTOS - SECTION-TWO - Marcus -->
+    <section class="section-two" id="produtos">
+      <div class="main-container">
+        <div class="left-side-text-container">
+          <p>
+            Na 4Cars você tem diversas opções de planos e veículos para alugar.
+            Conheça alguns dos nossos modelos mais procurados.
+          </p>
         </div>
-    </div>
+
+        <div class="right-side-img-container">
+          <img src="./img/carro.jpg" alt="Imagem do painel de um carro" />
+        </div>
+      </div>
+
+      <div class="produtos">
+        <article class="article">
+          <h2>
+            4<span>CARS</span> <br />
+            BASICS Hatchback
+          </h2>
+          <p>
+            <strong>Ford ka 1.0</strong> <br />
+            <strong>HB20 1.0</strong> <br />
+            <strong>Gol 1.0</strong> <br />
+            <br />
+            <strong>PLANO SEMANAL A PARTIR DE:</strong> <br />
+            <br />
+            <span class="tamanho-preco">R$269,90</span>
+          </p>
+        </article>
+
+        <article class="article">
+          <h2>
+            4<span>CARS</span> <br />
+            BASICS SEDAN
+          </h2>
+          <p>
+            <strong>Ford ka 1.0</strong> <br />
+            <strong>HB20 1.0</strong> <br />
+            <strong>Sandero 1.0</strong> <br />
+            <br />
+            <strong>PLANO SEMANAL A PARTIR DE:</strong> <br />
+            <br />
+            <span class="tamanho-preco">R$299,90</span>
+          </p>
+        </article>
+
+        <article class="article">
+          <h2>
+            4<span>CARS</span> <br />
+            EXECUTIVE B
+          </h2>
+          <p>
+            <strong>Honda Civic</strong> <br />
+            <strong>Toyota Corolla</strong> <br />
+            <strong>GM Cruze</strong> <br />
+            <br />
+            <strong>PLANO SEMANAL A PARTIR DE:</strong> <br />
+            <br />
+            <span class="tamanho-preco">R$369,90</span>
+          </p>
+        </article>
+
+        <article class="article">
+          <h2>
+            4<span>CARS</span> <br />
+            EXECUTIVE A
+          </h2>
+          <p>
+            <strong>Mercedes C 180</strong> <br />
+            <strong>Audi A4</strong> <br />
+            <strong>BMW 320i</strong> <br />
+            <br />
+            <strong>PLANO SEMANAL A PARTIR DE:</strong> <br />
+            <br />
+            <span class="tamanho-preco">R$469,90</span>
+          </p>
+        </article>
+      </div>
     </section>
-    
-</body>
+
+    <!-- SECTION THREE -->
+    <section class="section-three">
+      <article class="article-left-side">
+        <h2>Requisitos Para Alugar Com a Gente</h2>
+
+        <ul>
+          <li>Ter uma CNH válida</li>
+          <li>Ter 21 anos ou mais</li>
+          <li>Ter menos de 30 pontos na CNH</li>
+          <li>Ter local adequado para guardar o veículo</li>
+        </ul>
+      </article>
+
+      <article class="article-right-side">
+        <h2>Passo a Passo Para Alugar</h2>
+
+        <ul>
+          <li>Faça seu cadastro</li>
+          <li>Aguarde a análise dos seus dados</li>
+          <li>Escolha seu carro e a forma de pagamento</li>
+          <li>Agende um horário para retirada</li>
+        </ul>
+      </article>
+    </section>
+  </body>
 </html>
