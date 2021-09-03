@@ -1,134 +1,150 @@
-:root{
-    --font-family: Graphik-Regular, "Gotham SSm A","Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --primary-color: #FF5C5C;
-    --secondary-color: #ffa5a5;
-    --text-color-for-dark-bg: #000;
-    --text-color-for-light-bg: #fff;
+:root {
+  --font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --primary-color: #ff5c5c;
+  --secondary-color: #ffa5a5;
+  --text-color-for-dark-bg: #000;
+  --text-color-for-light-bg: #fff;
 }
 
 * {
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
-
+/* GUILHERME */
 header {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    height: 130px;
-    align-items: center;
+  background: rgba(0, 0, 0, 0.322);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
 }
 
 header > nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .numero4-cor {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 h1 {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
-.menu-navegacao{
-    display: flex;
-    list-style: none;
+.menu-navegacao {
+  display: flex;
+  list-style: none;
 }
 
 .botoes-navegacao {
-    font-family: var(--font-family);
-    margin: 0px 15px;
-    text-decoration: none;
+  color: white;
+  font-family: var(--font-family);
+  margin: 0px 15px;
+  text-decoration: none;
 }
 
+nav {
+  text-align: center;
+}
 
-.section-four {
+@media screen and (max-width: 720px) {
+  header {
     display: flex;
-    background-image: url(./img/car-section-four.jpg);
-    height: 400px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    height: 110px;
+    text-align: center;
+  }
+  header > li {
+    text-align: center;
+  }
 }
 
-.section-five {
-    display: flex;
+.botoes-navegacao-rosa {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
 
+.section-one {
+  text-align: center;
 }
-.contato {
-    display: flex;
-    
+
+section > div > img {
+  max-width: 80%;
+  max-height: 80%;
 }
+
+/* GUILHERME */
 
 /* NOSSOS PRODUTOS - SECTION TWO */
 .section-two .main-container {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 2fr;
 }
 
 @media screen and (max-width: 928px) {
-    .section-two .main-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .section-two .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .section-two .left-side-text-container {
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    padding: 10px 20px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px 20px;
 }
 
 @media screen and (max-width: 928px) {
-    .section-two .left-side-text-container {
-        font-size: 1.4rem;
-        height: 8em;
-    }
+  .section-two .left-side-text-container {
+    font-size: 1.4rem;
+    height: 8em;
+  }
 }
 
 .section-two .right-side-img-container img {
-    height: 100%;
-    max-width: 100%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .section-two .produtos {
-    display: grid;
-    gap: 30px;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 360px);
-    text-align: center;
-    padding: 75px 25px;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 360px);
+  text-align: center;
+  padding: 75px 25px;
 }
 
 .section-two .produtos .article {
-    background-color: var(--primary-color);
-    box-shadow: 4px 6px 10px var(--secondary-color); 
-    border-radius: 16px;
-    color: var(--text-color-for-light-bg);
-    display: grid;
-    place-content: center;
-    height: 320px;
-    padding: 10px 15px;
+  background-color: var(--primary-color);
+  box-shadow: 4px 6px 10px var(--secondary-color);
+  border-radius: 16px;
+  color: var(--text-color-for-light-bg);
+  display: grid;
+  place-content: center;
+  height: 320px;
+  padding: 10px 15px;
 }
 
 .section-two .produtos .article h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .section-two .produtos .article p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
