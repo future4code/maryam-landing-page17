@@ -9,11 +9,11 @@
   </head>
   <body>
     <header>
-      <div>
-        <h1><span class="numero4-cor">4</span>CARS</h1>
-      </div>
-
       <nav>
+        <div>
+          <h1><span class="numero4-cor">4</span>CARS</h1>
+        </div>
+
         <ul class="menu-navegacao">
           <li>
             <a class="botoes-navegacao botoes-navegacao-rosa" href="#inicio"
@@ -28,7 +28,7 @@
           </li>
           <li><a class="botoes-navegacao" href="#quem-somos">Quem somos</a></li>
           <li>
-            <a class="botoes-navegacao botoes-navegacao-rosa" href=""
+            <a class="botoes-navegacao botoes-navegacao-rosa" href="#contato"
               >Contato</a
             >
           </li>
@@ -125,7 +125,7 @@
     </section>
 
     <!-- SECTION THREE -->
-    <section class="section-three">
+    <section class="section-three" id="como-funciona">
       <article class="article-left-side">
         <h2>Requisitos Para Alugar Com a Gente</h2>
 
@@ -148,5 +148,83 @@
         </ul>
       </article>
     </section>
+
+    <section class="section-four" id="quem-somos">
+      <div class="section-four-container">
+        <div class="left-side-section-four-container">
+          <img src="./img/car-section-four.png" alt="" />
+        </div>
+
+        <div class="right-side-section-four-container">
+          <p>
+            <span class="section-four-quem-somos"> Quem somos </span> <br />
+            <br />
+            Somos uma empresa brasileira que nasceu para ajudar quem precisa de
+            um carro para trabalhar. Nossos carros estão aqui para te ajudar a
+            alcançar os seus objetivos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-five" id="contato">
+      <div class="section-five-container">
+        <div class="contato-lado-esquerdo">
+          <div class="titulo-contato"><h2>Fale Conosco</h2></div>
+          <form action="">
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" />
+            </div>
+
+            <div>
+              <label for="mail">Email</label>
+              <input type="email" name="email" id="mail" />
+            </div>
+
+            <div>
+              <textarea placeholder="Deixe sua mensagem aqui"></textarea>
+            </div>
+
+            <button>Enviar</button>
+          </form>
+        </div>
+
+        <div class="contato-lado-direito">
+          <h2>4CARS</h2>
+          <p>Rio de Janeiro - Rua da Estrelinha, nº 7000</p>
+          <p>São Paulo - Rua da Lua, nº 950</p>
+          <p>Pernambuco - Rua do Sol, nº 760</p>
+          <br />
+          <p>Email: contato@4cars.com.br</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://twitter.com/login?lang=pt" target="_blank"
+            ><img
+              src="./img/twitter-icon.png"
+              alt="ícone da rede social Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              src="./img/facebook-icon.png"
+              alt="ícone da rede social Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="./img/instagram-icone.png"
+              alt="ícone da rede social Instagram"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
