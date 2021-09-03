@@ -1,5 +1,9 @@
 :root{
     --font-family: Graphik-Regular, "Gotham SSm A","Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --primary-color: #FF5C5C;
+    --secondary-color: #ffa5a5;
+    --text-color-for-dark-bg: #000;
+    --text-color-for-light-bg: #fff;
 }
 
 * {
@@ -7,7 +11,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
+
+body {
+    font-family: var(--font-family);
+}
 
 header {
     padding: 15px;
@@ -25,7 +33,7 @@ header > nav {
 }
 
 .numero4-cor {
-    color: #ff5c5c;
+    color: var(--primary-color);
 }
 
 h1 {
@@ -43,6 +51,7 @@ h1 {
     text-decoration: none;
 }
 
+
 .section-four {
     display: flex;
     background-image: url(./img/car-section-four.jpg);
@@ -58,4 +67,68 @@ h1 {
 .contato {
     display: flex;
     
+}
+
+/* NOSSOS PRODUTOS - SECTION TWO */
+.section-two .main-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 928px) {
+    .section-two .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.section-two .left-side-text-container {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 928px) {
+    .section-two .left-side-text-container {
+        font-size: 1.4rem;
+        height: 8em;
+    }
+}
+
+.section-two .right-side-img-container img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.section-two .produtos {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 360px);
+    text-align: center;
+    padding: 75px 25px;
+}
+
+.section-two .produtos .article {
+    background-color: var(--primary-color);
+    box-shadow: 4px 6px 10px var(--secondary-color); 
+    border-radius: 16px;
+    color: var(--text-color-for-light-bg);
+    display: grid;
+    place-content: center;
+    height: 320px;
+    padding: 10px 15px;
+}
+
+.section-two .produtos .article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-two .produtos .article p {
+    font-size: 1.2rem;
 }
