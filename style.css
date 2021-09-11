@@ -1,0 +1,392 @@
+/* configurações default */
+:root {
+  --font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --primary-color: #ff5c5c;
+  --secondary-color: #ffa5a5;
+  --text-color-for-light-bg: #000;
+  --text-color-for-dark-bg: #fff;
+  --header-color: #c8c8c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* Configurações Header e section 1 Responsável:GUILHERME */
+/* início - configurações header */
+header {
+  background: var(--header-color);
+  padding: 15px;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+}
+
+@media screen and (max-width: 614px) {
+  header {
+    height: 100px;
+  }
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 795px) {
+  nav {
+    display: flex;
+  }
+  nav a {
+    font-size: 0.5em;
+    display: flex;
+  }
+}
+
+.numero4-cor {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: var(--font-family);
+}
+
+.menu-navegacao {
+  display: flex;
+  list-style: none;
+}
+
+.botoes-navegacao {
+  color: white;
+  font-family: var(--font-family);
+  margin: 0px 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.botoes-navegacao-rosa {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* início configurações section 1 */
+.section-one {
+  text-align: center;
+}
+
+section > div > img {
+  margin-top: 70px;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+@media screen and (max-width: 720px) {
+  section > div > img {
+    margin-top: 120px;
+  }
+}
+
+/* Configurações section 2 (produtos) e section 3 (como funciona) Responsável:Marcus */
+/* Início configurações Section 2 */
+.section-two .main-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 2fr;
+}
+
+span {
+  color: #000;
+}
+
+.tamanho-preco {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 928px) {
+  .section-two .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-two .left-side-text-container {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px 20px;
+  color: var(--text-color-for-dark-bg);
+}
+
+@media screen and (max-width: 928px) {
+  .section-two .left-side-text-container {
+    font-size: 1.4rem;
+    height: 8em;
+  }
+}
+
+.section-two .right-side-img-container img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.section-two .produtos {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding: 75px 25px;
+}
+
+@media screen and (max-width: 778px) {
+  .section-two .produtos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-two .produtos .article {
+  background-color: #fff;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  height: 320px;
+  padding: 10px 15px;
+}
+
+.section-two .produtos .article p {
+  color: var(--primary-color);
+}
+
+.section-two .produtos .article h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-two .produtos .article p {
+  font-size: 1.2rem;
+}
+
+/* Início configurações Section 3 */
+.section-three {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-color-for-dark-bg);
+}
+
+.section-three .article-left-side {
+  background-color: var(--secondary-color);
+  display: grid;
+  place-content: center;
+  padding: 10px 25px;
+}
+
+.section-three .article-left-side h2 {
+  margin-bottom: 20px;
+}
+
+.section-three .article-left-side li {
+  margin-bottom: 10px;
+}
+
+.section-three .article-right-side {
+  background-color: var(--primary-color);
+  display: grid;
+  place-content: center;
+  padding: 10px 25px;
+}
+
+.section-three .article-right-side h2 {
+  margin-bottom: 20px;
+}
+
+.section-three .article-right-side li {
+  margin-bottom: 10px;
+}
+
+.section-three ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .section-three {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .section-three {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Configurações section 4 (quem somos), section 5 (Contato) e footer  Responsável: Jessica */
+/* Início configurações Section 4 */
+.section-four-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+.left-side-section-four-container img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.right-side-section-four-container {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px 20px;
+  color: var(--text-color-for-dark-bg);
+  text-align: center;
+}
+
+.section-four-quem-somos {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: larger;
+}
+
+@media screen and (max-width: 795px) {
+  .left-side-section-four-container img {
+    display: none;
+  }
+  .section-four-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .right-side-section-four-container {
+    font-size: 1.5rem;
+  }
+}
+
+/* Início configurações Section 5 */
+.section-five {
+  /* min-height: 60vh; */
+  background-color: var(--primary-color);
+}
+.section-five-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+}
+
+.contato-lado-esquerdo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contato-lado-direito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contato-lado-esquerdo div {
+  margin-bottom: 15px;
+  width: 300px;
+}
+.contato-lado-esquerdo div input {
+  display: block;
+  width: 100%;
+}
+
+.contato-lado-esquerdo textarea {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 150px;
+}
+
+.contato-lado-esquerdo button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 670px) {
+  .section-five-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contato-lado-esquerdo button {
+    margin-bottom: 50px;
+  }
+}
+
+/* Início configurações Footer */
+
+footer {
+  height: 10vh;
+  background-color: var(--header-color);
+  display: grid;
+  place-content: center;
+}
+
+/* footer ul li a img {
+  display: flex;
+} */
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer img {
+  width: 50px;
+  margin: 0 10px;
+}
