@@ -343,6 +343,7 @@ span {
 }
 .contato-lado-esquerdo div input {
   display: block;
+  padding: 5px;
   width: 100%;
 }
 
